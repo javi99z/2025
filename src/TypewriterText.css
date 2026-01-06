@@ -1,0 +1,48 @@
+.typewriter-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.typewriter-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  line-height: 1.6;
+  font-family: 'Delius', cursive;
+  min-height: 2.4rem;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.4rem;
+  background-color: white;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+  vertical-align: middle;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .typewriter-text {
+    font-size: 1.1rem;
+    min-height: 1.8rem;
+  }
+
+  .cursor {
+    height: 1.1rem;
+  }
+}
+
+

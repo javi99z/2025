@@ -1,0 +1,27 @@
+.fadein-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.fadein-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #646cff;
+  line-height: 1.6;
+  font-family: 'Parisienne', cursive;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fadein-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-color-scheme: light) {
+  .fadein-text {
+    color: #213547;
+  }
+}
